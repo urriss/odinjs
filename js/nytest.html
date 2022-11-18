@@ -37,8 +37,9 @@ let airports = [
 ]
 
 
-
 let car = airports.find(car => car.airport_code === inputcode);
+
+console.log(car);
 
 document.getElementById("hetta").innerHTML = car.airport_name;
 
