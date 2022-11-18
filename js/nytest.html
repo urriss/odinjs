@@ -8,21 +8,60 @@
 </head>
 <body>
 
+
+  <h1 id="hetta"></h1>
+
 <script>
 
 
-const ourPlanet  = "Earth"
-let tjkdlfs
-console.log(ourPlanet)
+let inputcode = prompt("Please enter Airport code", "ABC");
 
 
-  //console.log("Hello, Worldhoppers!")
-  //console.log(23 + 97)
-  //console.log((4+6+9)/77)
+let airports = [
+  {
+    "airport_code": "AAL",
+    "airport_name": "Aalborg",
+    "city_name": "Aalborg",
+  },
+  {
+    "airport_code": "ARN",
+    "airport_name": "Stockholm Arlanda",
+    "city_name": "Stockholm",
+  },
+  {
+    "airport_code": "KEF",
+    "airport_name": "Keflavik Intl Airport",
+    "city_name": "Reykjavik",
+  },
+ 
+]
 
- // let a = 10 
- // let b = 7 * a
- // console.log(b * a)
+
+
+let car = airports.find(car => car.airport_code === inputcode);
+
+document.getElementById("hetta").innerHTML = car.airport_name;
+
+</script>
+
+
+
+
+
+
+<script>
+//const ourPlanet  = "Earth"
+//let tjkdlfs
+//console.log(ourPlanet)
+
+
+//console.log("Hello, Worldhoppers!")
+//console.log(23 + 97)
+//console.log((4+6+9)/77)
+
+// let a = 10 
+// let b = 7 * a
+// console.log(b * a)
 
 // let max = 57
 //  let actual = max - 13
@@ -30,6 +69,7 @@ console.log(ourPlanet)
 
 
 </script>
+
 
 </body>
 </html>
